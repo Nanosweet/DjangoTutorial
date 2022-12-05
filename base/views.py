@@ -13,9 +13,7 @@ rooms = [
 
 def home(request):
     context = {'rooms' : rooms}
-    i = type(context)
-    return type(context)
-    #return render(request, 'base/index.html', context)
+    return render(request, 'base/index.html', context)
 
 def room(request, pk):
 
